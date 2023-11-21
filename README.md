@@ -4,3 +4,6 @@ about ionic-bind
 
 
   [단방향 @Output()](./appbindsmp/ionic-output.gif)
+  ![plot](./appbindsmp/ionic-output.gif)
+  ![plot](/appbindsmp/ionic-output.gif)
+  ![plot](//appbindsmp/ionic-output.gif)
