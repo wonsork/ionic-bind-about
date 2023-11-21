@@ -12,5 +12,10 @@ export class HomePage {
   bookDesc:string ="이달의 추천도서!!!"
   constructor() {}
 
+  reserveinfos:string[] =[];
+
+  bookReserveHistorys( items :string | ''){
+    this.reserveinfos.push( items);
+  }
 }
 

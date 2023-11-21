@@ -1,13 +1,27 @@
 <ion-content [fullscreen]="true">
-  <div id="container">    
     
+    <!-- <ion-label>{{bookName}}</ion-label>
     <app-bookinfo [bookTitle]=bookName
      [bookImage]=bookImage
      [bookDesc]=bookDesc
-    ></app-bookinfo>
-    <ion-label>{{bookName}}</ion-label>
+    ></app-bookinfo> -->
     
     <!-- <ion-img [src]= bookImage ></ion-img> -->
+    <app-reserveinfo (OutputReserveInfos)="bookReserveHistorys($event)"></app-reserveinfo>
 
-  </div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>대출예약자 목록 {{ reserveinfos.length |number}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let item of reserveinfos">
+            <ion-label>{{item}}</ion-label>
+          </ion-item>
+    
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+  
 </ion-content>
