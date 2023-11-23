@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+    
+  
+  <!-- 
+    <ion-card>
+    <ion-card-header>
+      <ion-card-title>대출예약자 목록 {{ reserveinfos.length |number}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let item of reserveinfos">
+          <ion-label>{{item}}</ion-label>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card> 
+-->
+  <app-bookborrow (borrowOrder)="parentBorrowEvent($event)"></app-bookborrow>
+
+
+  <!-- <ion-buttons>
+    <ion-button (click)="sendBookInfo()">예약목록 내보내기 </ion-button>
+    
+  </ion-buttons> -->
+</ion-content>

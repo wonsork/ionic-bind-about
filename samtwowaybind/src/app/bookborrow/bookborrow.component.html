@@ -1,0 +1,15 @@
+<ion-card>
+  <ion-card-content>
+    <ion-card-header>
+      <ion-card-title > {{rentable}}</ion-card-title>
+
+      <ion-toggle [checked]="rentable" >대출가능: </ion-toggle>
+
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button (click)="borrow()">대출</ion-button>
+      <ion-button (click)="returnbook()">반납</ion-button>
+    </ion-card-content>
+    
+  </ion-card-content>
+</ion-card> 
